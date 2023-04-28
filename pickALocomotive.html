@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+    Story by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Picking Locomotives</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .attribution {
+            font-size: 10pt;
+        }
+        
+        #daylightImageFacebook {
+            width: 1000px;
+        }
+
+        #bigBoy4014, #daylight4449, #nw611 {
+            height: 211.25px;
+        }
+
+        #daylight4449, #Daylight, #daylightReference {
+            padding-left: 100px;
+        }
+
+        @media only screen and (max-width: 1700px) {
+            #daylightImageFacebook {
+                width: 900px;
+            }
+        }
+
+        @media only screen and (max-width: 1680px) {
+            #daylightImageFacebook {
+                width: 800px;
+            }
+
+            #daylight4449, #Daylight, #daylightReference {
+                padding-left: 50px;
+            }
+
+            #bigBoy4014, #daylight4449, #nw611 {
+                height: 111.25px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            #daylightImageFacebook {
+                width: 700px;
+            }
+
+            .attribution {
+                font-size: 7pt;
+            }
+        }
+
+        @media only screen and (max-width: 798px) {
+            #daylightImageFacebook {
+                width: 600px;
+            }
+        }
+
+        @media only screen and (max-width: 658px) {
+            #daylightImageFacebook {
+                width: 500px;
+            }
+        }
+
+        @media only screen and (max-width: 554px) {
+            #daylightImageFacebook {
+                width: 400px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #daylight4449, #Daylight, #daylightReference {
+                padding-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 470px) {
+            #daylightImageFacebook {
+                width: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 358px) {
+            #daylightImageFacebook {
+                width: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 304px) {
+            #daylightImageFacebook {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+        <section class="wrapper style1 align-center">
+            <div class="inner medium">
+                <h2>Picking a Locomotive for the Freedom Train</h2>
+                <p>Which locomotive would you prefer to see at the front of the <i>Freedom Train?</i></p>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <input type="radio" name="BigBoy4014" id="BigBoy4014" /><label for="BigBoy4014">Big Boy 4014</label><br />
+                            <img src="images/bigBoy.jpg" id="bigBoy4014" alt="Big Boy 4014" /><br />
+                            <p class="attribution">Image by <a href="https://www.up.com/cs/groups/public/@uprr/@corprel/documents/digitalmedia/img_up_media-4014-150-cele_lr.jpg" target="_blank">www.up.com</a>.</p>
+                        </div>
+                        <div class="field half">
+                            <input type="radio" name="Daylight" id="Daylight" /><label for="Daylight">Daylight 4449 (Previous Locomotive)</label><br />
+                            <img src="images/daylight.webp" id="daylight4449" alt="Daylight 4449" /><br />
+                            <p class="attribution" id="daylightReference">Image by <a href="https://www.spokesman.com/galleries/2009/oct/19/historic-steam-train/" target="_blank">www.spokesman.com</a>.</p>
+                        </div>
+                        <div class="field half">
+                            <input type="radio" name="NW611" id="NW611" /><label for="NW611">N&W 611</label><br />
+                            <img src="images/norfolkAndWestern611.jpg" id="nw611" alt="Norfolk & Western 611" /><br />
+                            <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://commons.wikimedia.org/w/index.php?curid=60570269">File:N&W J Class 611 in Manassas VA.jpg</a>" by <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/User:Fan_Railer">Fan Railer</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0?ref=openverse">CC BY-SA 3.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></a>. </p>
+                        </div>
+                        <div class="field half">
+                            <input type="radio" name="other" id="other"/><label for="other">Other</label>
+                            <input type="text" name="locomotive" id="locomotive" placeholder="Enter Locomotive Name Here (e.g., N&W 611)" style="visibility: hidden;" />
+                        </div>
+                        <!--<div class="field half">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="" />
+    </div>-->
+                        <!--<div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="6"></textarea>
+                        </div>-->
+                    </div>
+                    <ul class="actions special">
+                        <li><input type="submit" name="submit" id="submit" value="Submit Preference" onclick="sendInformation();" /></li>
+                    </ul>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    <!--<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>-->
+                </ul>
+                <p>&copy; Bring Back the Freedom Train. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function select(information) {
+            return document.querySelector(information);
+        }
+
+        var bigBoyRadio = select("#BigBoy4014"),
+            daylightRadio = select("#Daylight"),
+            nwRadio = select("#NW611"),
+            other = select("#other");
+
+        bigBoyRadio.onclick = function () {
+            daylightRadio.checked = false;
+            nwRadio.checked = false;
+            other.checked = false;
+            select("#locomotive").style.visibility = "hidden";
+            select("#locomotive").value = "Big Boy 4014";
+        }
+
+        daylightRadio.onclick = function () {
+            bigBoyRadio.checked = false;
+            nwRadio.checked = false;
+            other.checked = false;
+            select("#locomotive").style.visibility = "hidden";
+            select("#locomotive").value = "SP Daylight 4449";
+        }
+
+        nwRadio.onclick = function () {
+            bigBoyRadio.checked = false;
+            daylightRadio.checked = false;
+            other.checked = false;
+            select("#locomotive").style.visibility = "hidden";
+            select("#locomotive").value = "Norfolk & Western 611";
+        }
+
+        other.onclick = function () {
+            bigBoyRadio.checked = false;
+            daylightRadio.checked = false;
+            nwRadio.checked = false;
+            select("#locomotive").style.visibility = "visible";
+            select("#locomotive").value = null;
+        }
+
+        function sendInformation() {
+            alert("Sending information");
+            //var locomotive = select("#locomotive").value;
+            //var information = "locomotive=" + locomotive;
+            //xhttp.open("POST", "send_information.php", true); // will only work on server
+            //xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            //xhttp.send(information);
+        }
+    </script>
+
+</body>
+</html>
