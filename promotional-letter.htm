@@ -1034,12 +1034,12 @@ will help show that, despite our economic and social struggles, we are still
 the freest and finest nation in which to live.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Times New Roman",serif'>I am a
-patriotic 16-year-old train enthusiast who is looking for the leaders of this
+patriotic <span id="age">17</span>-year-old train enthusiast who is looking for the leaders of this
 country to rise to the occasion. If there is any event where the <i>American
 Freedom Train</i> should return to operation, the 250<sup>th</sup> anniversary
 of our nation would be it. I hope that you support this cause.<o:p></o:p></span></p>
 
-<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Let’s work
+<p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Let's work
 together to make this happen again!<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-family:"Times New Roman",serif'>Best
@@ -1051,6 +1051,29 @@ regards,<o:p></o:p></span></p>
 Easey<o:p></o:p></span></p>
 
 </div>
+
+	<script>
+		function $(kd) {
+			return document.getElementById(kd);
+		}
+
+		var date = new Date(),
+			month = date.getMonth(),
+			day = date.getDate(),
+			year = date.toString().split(" ")[3];
+
+		year = +year;
+
+		var age = 0;
+
+		if (month >= 7 || month == 7 && day >= 9) {
+			age = year - 2006;
+		} else {
+			age = year - 2007;
+		}
+
+		$('age').innerHTML = age;
+	</script>
 
 </body>
 
