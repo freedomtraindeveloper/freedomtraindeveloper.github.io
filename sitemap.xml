@@ -2,9 +2,15 @@
 <urlset xmln="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<!--https://freedomtrain2026developer.github.io/index.html-->
 	<url>
-		<loc>https://freedomtrain2026developer.github.io/index.html</loc>
+		<loc>https://americanfreedomtrain2026.us/index.html</loc>
 		<lastmod>2023-10-13</lastmod>
 	</url>
+	<!--https://americanfreedomtrain2026.us/message-sent.html-->
+	<url>
+		<loc>https://americanfreedomtrain2026.us/message-sent.html</loc>
+		<lastmod>2023-10-13</lastmod>
+	</url>
+	<!--https://americanfreedomtrain2026.us/promotional-letter.htm-->
 	<url>
 		<loc>https://americanfreedomtrain2026.us/promotional-letter.htm</loc>
 		<lastmod>2023-10-09</lastmod>
