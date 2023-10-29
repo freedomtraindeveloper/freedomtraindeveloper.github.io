@@ -178,11 +178,68 @@
     <div id="wrapper" class="divided">
         <section class="wrapper style1 align-center" id="first">
             <div class="inner">
-                <img src="images/americanFreedomTrain2026Logo.jpg" style="max-width: 500px;" alt="American Freedom Train 2026 Logo" />
+                <!--<img src="images/americanFreedomTrain2026Logo.jpg" style="max-width: 500px;" alt="American Freedom Train 2026 Logo" />-->
+                <div class="freedomTrainPicture">
+                    <noscript>
+                        <img src="images/Freedom-Train.webp" style="max-width: 500px;" alt="American Freedom Train Charging Through" />
+                        <p class="attribution">Image by <a href="https://oswegocountytoday.com/community/american-freedom-train-exhibit-on-display/" target="_blank">oswegocountytoday.com</a>.</p>
+                    </noscript>
+                </div>
                 <p>Your message has been sent.</p>
                 <a href="/"><== Back to Home Page</a>
             </div>
         </section>
     </div>
+
+    <script>
+        var sources = [
+            {
+                src: "images/Freedom-Train.webp",
+                href: "https://oswegocountytoday.com/community/american-freedom-train-exhibit-on-display/",
+                websiteName: "oswegocountytoday.com",
+                alt: "American Freedom Train Charging Through"
+            },
+            {
+                src: "images/freedomTrainPic2.jpg",
+                href: "https://www.4449.com/excursions/76freedom/srbushaft13.jpg",
+                websiteName: "www.4449.com",
+                alt: "American Freedom Train On Display"
+            },
+            {
+                src: "images/FreedomTrain1948.jpg",
+                href: "https://www.freedomtrain.org/freedom-train-consist-1-pa1-locomotive-1776.htm",
+                websiteName: "www.freedomtrain.org",
+                alt: "Freedom Train On Display"
+            }];
+
+        var pictureChoice = generateNumber(sources); 
+
+        var image = sources[pictureChoice];
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function selectClass(className) {
+            return document.querySelector("." + className);
+        }
+
+        function generateNumber(array) {
+            while (true) {
+                var number = Math.floor(Math.random(array.length - 1) * 10);
+                if (number > array.length - 1) {
+                    continue;
+                }
+                return number;
+            }
+        }
+
+        window.onload = function () {
+            selectClass("freedomTrainPicture").innerHTML = `
+            <img src="${image.src}" style="max-width: 500px;" alt="${image.alt}"/>
+            <p class="attribution">Image by <a href="${image.href}" target="_blank">${image.websiteName}</a>.</p>
+            `;
+        }
+    </script>
 </body>
 </html>
