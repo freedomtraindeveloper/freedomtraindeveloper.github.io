@@ -1,3 +1,12 @@
 User-agent: *
 Disallow: /assets/
-Disallow: /images/
+Disallow: /images/banner.jpg
+Disallow: /images/billOfRights.jpg
+Disallow: /images/constitution.jpg
+Disallow: /images/americanFreedomTrain2026Logo.jpg
+Disallow: /images/declarationOfIndependence.jpg
+Disallow: /images/libertyBell.jpg
+Disallow: /images/signature.jpg
+Disallow: /images/trumanDoctrine.jpg
+Disallow: /images/gallery/
+Disallow: /other_files/
