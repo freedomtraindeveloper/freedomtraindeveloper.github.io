@@ -51,7 +51,7 @@
 				display: none;
 			}
 
-			#freedomTrainOswego, #timeline {
+			.freedomTrains, #timeline {
 				width: 1000px;
 			}
 
@@ -68,14 +68,18 @@
 				text-align: initial;
 			}
 
+			#newTrain {
+				max-width: 800px;
+			}
+
 			@media only screen and (max-width: 1700px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 900px;
                 }
 			}
 
 			@media only screen and (max-width: 1680px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 800px;
                 }
 
@@ -89,7 +93,7 @@
 			}
 
             @media only screen and (max-width: 1280px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 700px;
                 }
 
@@ -121,13 +125,13 @@
 			}
 
 			@media only screen and (max-width: 798px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 600px;
                 }
 			}
 
             @media only screen and (max-width: 658px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 500px;
                 }
 
@@ -150,7 +154,7 @@
 			}
 
             @media only screen and (max-width: 554px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 400px;
                 }
             }
@@ -168,7 +172,7 @@
 			}
 
             @media only screen and (max-width: 470px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 300px;
                 }
 
@@ -192,7 +196,7 @@
 			}
 
             @media only screen and (max-width: 358px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 200px;
                 }
 
@@ -209,7 +213,7 @@
 			}
 
             @media only screen and (max-width: 304px) {
-                #freedomTrainOswego, #timeline {
+                .freedomTrains, #timeline {
                     width: 150px;
                 }
             }
@@ -237,7 +241,7 @@
 
 			<section class="wrapper style1 align-center" id="first">
 				<div class="inner">
-					<img src="images/Freedom-Train.webp" id="freedomTrainOswego" alt="American Freedom Train Puffing Through" />
+					<img src="images/Freedom-Train.webp" class="freedomTrains" alt="American Freedom Train Puffing Through" />
 					<p class="attribution">Image by <a href="https://oswegocountytoday.com/community/american-freedom-train-exhibit-on-display/" target="_blank">oswegocountytoday.com</a>.</p>
 					<h2>The Mission</h2>
 					<p>This website was developed to inspire government organizations and railroads to help promote patriotism by getting the <i>Freedom Train</i> ready before 
@@ -278,6 +282,8 @@
 			<!-- Five -->
 			<section class="wrapper style1 align-center">
 				<div class="inner">
+					<img src="images/TRN_American_Steam_test_firing.jpg" class="freedomTrains" id="newTrain" alt="American Freedom Train 250 Fired Up" />
+					<p class="attribution">Image by <a href="https://www.trains.com/trn/news-reviews/news-wire/american-steam-group-conducts-successful-steam-tests-on-t-1-no-2100/" target="_blank">www.trains.com</a>.</p>
 					<p>
 						With the 250th anniversary of the United States of America around the corner, it is our mission to get the <i>American Freedom Train</i> up and running before 2026. We want to give Americans the same patriotic fire their grandparents felt when the first two Freedom Trains ran. However, there is much to be done in the next two years to reach our goal. A few of the tasks that we need to complete include choosing a locomotive for the event, working with different organizations to figure out what will be displayed in the train, and working with the different railroads to map out the route that the train will go through in order to visit all 48 states.
 					</p>
@@ -285,8 +291,9 @@
 
 					<a href="images/trainTimelineStartingPoint.png" target="_blank"><img src="images/trainTimelineStartingPoint.png" class="trainTimeline" draggable="false" alt="Timeline with train tracks" /></a>
 
-					<p>We have begun to get a bit more progress in! If you want to read a copy of the promotional letter, you can read it <a href="promotional-letter.htm" target="_blank">here</a>.</p>
-					<p>We just got a response from Roger Marshall, one of the US Senators. If you would like to read his response, and the follow-up letter that was sent, you can view it <a href="roger_marshall_response.html" target="_blank">here</a>.</p>
+					<p>We have begun to get a bit more progress in! If you want to read a copy of the promotional letter, you can read it <a href="promotional-letter.htm" target="_blank">here</a>. (By the way, feel free to use this letter 
+						as a template to get more people interested in this project.)</p>
+					<p><a href="roger_marshall_response.html" target="_blank">Click here</a> to read the response sent by Senator Roger Marshall.</p>
 					<hr>
 					<div class="normal_text">
 					<p><b style="color: red;">IMPORTANT ANNOUNCEMENT:</b> Some very important milestones have been reached in the effort to return the American Freedom Train for America’s 250th birthday! Locomotive No. 2100 has been chosen to operate as American Freedom Train No. 250, and has, according to American Steam Railroad Preservation Association, “has STEAMED for the first time in nearly 20 years.” This means that we are one step closer to getting the American Freedom Train steaming down American rail lines.</p>
@@ -307,6 +314,7 @@
 						<input type="email" id="email" name="email" placeholder="Enter Email Address Here" required/><br />
 						<input type="text" id="subject" name="subject" placeholder="Enter Subject Matter Here" required/><br />
 						<textarea id="message" name="message" placeholder="Enter Message Here" required></textarea><br />
+						<p><b>NOTE: </b>If you see a <code>Server Error (500)</code> message show up on your screen, don't worry&mdash;I still got your message!</p>
 						<input type="submit" name="Send" />
 					</form>
 				</div>
